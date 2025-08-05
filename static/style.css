@@ -11,6 +11,21 @@ body {
   color: #232031;
   padding: 3rem 0 2rem 0;
   position: relative;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .avatar {
@@ -81,3 +96,5 @@ body.dark-theme .section-title {
 /* Custom scrollbar for a polished feel */
 body::-webkit-scrollbar {width:9px;}
 body::-webkit-scrollbar-thumb {background:#bddcf4;border-radius:6px;}
+
+
