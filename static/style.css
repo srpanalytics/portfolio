@@ -1,0 +1,83 @@
+body {
+  background: #f5f6fa;
+  color: #20232a;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  transition: background 0.4s, color 0.3s;
+}
+
+.hero-section {
+  background: linear-gradient(120deg,#9392b8 0,#95e6f3 100%);
+  min-height: 380px;
+  color: #232031;
+  padding: 3rem 0 2rem 0;
+  position: relative;
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 120px;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 18px 0 rgba(0,0,0,.12);
+}
+
+.project-card {
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.project-card:hover {
+  box-shadow: 0 6px 32px 0 rgba(60,70,130,.17);
+}
+.project-img {
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid #0080ff33;
+}
+
+.skill-card:hover {
+  border-color: #00bfff;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Theme: Dark Mode */
+body.dark-theme, body.dark-theme main {
+  background: #1b1e24;
+  color: #d6eef3;
+}
+body.dark-theme .navbar, 
+body.dark-theme footer, 
+body.dark-theme .bg-white {
+  background: #212331 !important;
+  color: #eee !important;
+}
+body.dark-theme .project-card,
+body.dark-theme .skill-card,
+body.dark-theme .modal-content {
+  background: #242746;
+  color: #eee;
+  border-color: #293559;
+}
+body.dark-theme .modal-content {
+  background: #1c1f2b;
+}
+body.dark-theme .section-title {
+  color: #64d3fa;
+}
+
+/* Animation utility */
+.reveal-hero { animation: fadeInHero 1.8s; }
+@keyframes fadeInHero { from { opacity: 0; transform: translateY(40px);} to { opacity: 1; transform: none;} }
+
+/* Responsive fix */
+@media (max-width: 600px) {
+  .project-img { height: 120px; }
+}
+
+/* Custom scrollbar for a polished feel */
+body::-webkit-scrollbar {width:9px;}
+body::-webkit-scrollbar-thumb {background:#bddcf4;border-radius:6px;}

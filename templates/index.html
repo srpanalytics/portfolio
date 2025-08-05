@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ name }} – {{ title }}</title>
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+<header class="hero-section text-center d-flex flex-column align-items-center justify-content-center">
+    <img src="{{ url_for('static', filename='images/profile.jpg') }}" class="avatar mb-3" alt="Profile">
+    <h1 class="fw-bold display-5 reveal-hero">{{ name }}</h1>
+    <h2 class="fs-4 text-secondary fw-light">{{ title }}</h2>
+    <p class="lead mt-2">{{ description }}</p>
+    <div class="mb-2"><a href="{{ url_for('static', filename='resume.pdf') }}" class="btn btn-outline-primary btn-sm" download><i class="fa fa-download"></i> Resume</a></div>
+    <br>
+    <div>
+      <a href="#projects" class="btn btn-dark btn-sm me-2">See My Projects</a>
+      <a href="#about" class="btn btn-outline-dark btn-sm">About Me</a>
+    </div>
+</header>
+
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white shadow-sm">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navItems">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        </ul>
+        <button class="btn btn-outline-secondary ms-2" id="themeToggle" title="Switch Theme"><i class="fa fa-moon"></i></button>
+      </div>
+    </div>
+</nav>
+
+<main class="container-fluid px-0 mx-0">
+
+  <!-- PROJECTS -->
+  <section id="projects" class="container py-5">
+    <h2 class="mb-4 text-center display-6 fw-semibold"><i class="fa fa-diagram-project"></i> Projects</h2>
+    <div class="row g-4 justify-content-center">
+      {% for proj in projects %}
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow project-card" data-bs-toggle="modal" data-bs-target="#{{ proj.id }}Modal">
+          <img src="{{ url_for('static', filename=proj.img) }}" alt="{{ proj.name }}" class="card-img-top project-img">
+          <div class="card-body">
+            <h5 class="card-title">{{ proj.name }}</h5>
+            <p class="card-text small">{{ proj.short }}</p>
+            <div>
+              {% for tag in proj.tags %}
+              <span class="badge bg-gradient bg-info text-dark me-1 small">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for project detail -->
+      <div class="modal fade" id="{{ proj.id }}Modal" tabindex="-1" aria-labelledby="{{ proj.id }}Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="{{ proj.id }}Label">{{ proj.name }}</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="{{ url_for('static', filename=proj.img) }}" class="img-fluid rounded mb-3" alt="">
+              <p>{{ proj.details }}</p>
+              <div class="mb-2">
+                {% for tag in proj.tags %}
+                  <span class="badge bg-primary small">{{ tag }}</span>
+                {% endfor %}
+              </div>
+              {% if proj.demo %}
+                <a href="{{ proj.demo }}" class="btn btn-success btn-sm me-1" target="_blank"><i class="fa fa-play"></i> Live Demo</a>
+              {% endif %}
+              {% if proj.code %}
+                <a href="{{ proj.code }}" class="btn btn-outline-dark btn-sm" target="_blank"><i class="fab fa-github"></i> Source</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="container py-5">
+    <h2 class="mb-4 text-center display-6 fw-semibold"><i class="fa fa-lightbulb"></i> Skills</h2>
+    <div class="row justify-content-center">
+      {% for sk in skills %}
+      <div class="col-12 col-md-6 col-lg-3 mb-3 skill-card">
+        <div class="p-3 rounded-3 border border-2 border-primary h-100 bg-white shadow-sm animate__animated animate__fadeIn">
+          <h5 class="fw-bold mb-2"><i class="fa fa-check-circle text-primary"></i> {{ sk.category }}</h5>
+          <ul class="list-unstyled mb-0">
+            {% for skill in sk.skills %}
+            <li class="my-1"><i class="fa fa-chevron-right text-primary small"></i> {{ skill }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="container py-5">
+    <h2 class="mb-4 text-center display-6 fw-semibold"><i class="fa fa-user"></i> About Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center fs-5">
+        <p>I am a dedicated Business Analyst and AI/ML Developer passionate about building data-driven solutions that solve real-world business challenges. With experience in data analysis, machine learning, and process improvement, I create actionable insights and scalable AI models to drive decision-making and efficiency.</p>
+        <p>My expertise spans Python development, statistical modeling, visualization tools, and agile methodologies to ensure projects are delivered with high quality and impact.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="text-center py-4 bg-dark text-light mt-auto">
+  <span>&copy; 2024 {{ name }}</span> • <span><i class="fab fa-linkedin" aria-hidden='true'></i> <a href="https://in.linkedin.com/in/sranjanpatra" class="text-light" target="_blank">LinkedIn</a></span>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
