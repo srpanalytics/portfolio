@@ -6,23 +6,23 @@ app = Flask(__name__)
 projects = [
     {
         'id': 'pr1',
-        'name': 'ML SaaS Dashboard',
-        'short': 'End-to-end SaaS for business metric prediction, embed AI in workflow.',
-        'details': 'Built a cloud-native dashboard for business metric forecasting using Python/Flask backend, React frontend, and deployed ML models for live predictions. Enabled role-based analytics and report scheduling.',
-        'img': 'images/project1.png',
-        'tags': ['AI', 'ML', 'Analytics', 'Python', 'Flask'],
-        'demo': 'https://example.com/demo1',
-        'code': 'https://github.com/example/ml-saas'
+        'name': 'flyseer.ai',
+        'short': 'ML-powered app to predict airline booking completion behavior.',
+        'details': 'Built a full-stack Flask web application to predict booking completion based on user behavior inputs. Integrated trained machine learning models (Random Forest, Logistic Regression, Gradient Boosting) with a modular backend and a clean, responsive front-end UI. Includes preprocessing pipeline and form logic to match model input structure. Deployed using Render.',
+        'img': 'images/project_bookease.png',
+        'tags': ['Flask', 'Python', 'Machine Learning', 'Deployment', 'UI/UX'],
+        'demo': 'https://flyseekerai.onrender.com/',
+        'code': 'https://github.com/srpanalytics/bookingp'
     },
     {
-        'id': 'pr2',
-        'name': 'Churn Prediction API',
-        'short': 'Deployable Python API for real-time customer churn prediction.',
-        'details': 'Created and containerized predictive ML model pipeline and Flask REST API, integrated with business CRM to automate retention campaigns and A/B testing.',
-        'img': 'images/project2.png',
-        'tags': ['ML', 'API', 'Python', 'Flask'],
-        'demo': '',
-        'code': 'https://github.com/example/churn-api'
+    'id': 'pr2',
+    'name': 'Plotly Dashboard',
+    'short': 'Interactive dashboard to monitor and analyze SAP ticket performance.',
+    'details': 'Developed a Dash-based web dashboard for IT Service Management at Shyam Metalics and Energy Ltd. Visualizes key SAP ticket metrics like TAT, ticket age, department-level trends, and status distribution. Integrated real-time filtering by department, date, and location. The app uses Plotly for interactive charts and a clean, dark-themed UI for stakeholder reporting and decision support.',
+    'img': 'images/project_itsm.png',  
+    'tags': ['Dash', 'Plotly', 'Python', 'Analytics', 'Dashboard'],
+    'demo': 'https://your-itsm-app-link.com',  
+    'code': 'https://github.com/yourusername/itsm-dashboard'
     }
 ]
 
