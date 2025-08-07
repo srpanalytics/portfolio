@@ -15,16 +15,117 @@ projects = [
         'code': 'https://github.com/srpanalytics/bookingp'
     },
     {
-    'id': 'pr2',
-    'name': 'Plotly Dashboard',
-    'short': 'Interactive dashboard to monitor and analyze SAP ticket performance.',
-    'details': 'Developed a Dash-based web dashboard for IT Service Management at Shyam Metalics and Energy Ltd. Visualizes key SAP ticket metrics like TAT, ticket age, department-level trends, and status distribution. Integrated real-time filtering by department, date, and location. The app uses Plotly for interactive charts and a clean, dark-themed UI for stakeholder reporting and decision support.',
-    'img': 'images/project_itsm.png',  
-    'tags': ['Dash', 'Plotly', 'Python', 'Analytics', 'Dashboard'],
-    'demo': 'https://your-itsm-app-link.com',  
-    'code': 'https://github.com/yourusername/itsm-dashboard'
+        'id': 'pr2',
+        'name': 'Plotly Dashboard',
+        'short': 'Interactive dashboard to monitor and analyze SAP ticket performance.',
+        'details': 'Developed a Dash-based web dashboard for IT Service Management at Shyam Metalics and Energy Ltd. Visualizes key SAP ticket metrics like TAT, ticket age, department-level trends, and status distribution. Integrated real-time filtering by department, date, and location. The app uses Plotly for interactive charts and a clean, dark-themed UI for stakeholder reporting and decision support.',
+        'img': 'images/project_itsm.png',  
+        'tags': ['Dash', 'Plotly', 'Python', 'Analytics', 'Dashboard'],
+        'demo': 'https://your-itsm-app-link.com',  
+        'code': 'https://github.com/yourusername/itsm-dashboard'
+    },
+    {
+        'id': 'pr3',
+        'name': 'SMART-PARCHI (Automated Logbook System)',
+        'short': 'Designed with a user-friendly interface, it makes record-keeping faster, easier, and more reliable.', 
+        'details': 'Smartparchi is a simple, secure, and cloud-based logbook automation tool. It lets you fill forms online with minimal input and access your data anytime, from anywhere. Designed with a user-friendly interface, it makes record-keeping faster, easier, and more reliable.',
+        'img': 'images/smartparchi.png',
+        'tags': ['Requirement gathering', 'Change management', 'Data analysis', 'Communication', 'BRD,FRD,PRD and SRS documentation', 'Stakeholder management'],
+        'demo': 'https://smartparchi-qas.shyamgroup.com/home',
+        'code': 'https://github.com/srpanalytics'
+    },
+    {
+        'id': 'pr4',
+        'name': 'Quality Inspection application for Manufacturing',
+        'short': 'Streamline and centralize the management of quality inspection data for raw materials.',
+        'details': 'QAINSP is a web-based application designed for Shyam Metalics & Energy Ltd. to streamline and centralize the management of quality inspection data for raw materials. The primary objective of this document is to define the business requirements of QAINSP, ensuring alignment with organizational goals and quality assurance standards. By integrating inspection results from different stages of the supply chain, the application enhances accuracy, efficiency, and accessibility of quality inspection data, ultimately improving decision-making and operational effectiveness. The purpose of this document is to outline the business requirements for the QAINSP application. It serves as a bridge between stakeholders and the development team, ensuring that all requirements align with business goals and user needs. ',
+        'img': 'images/qainsp.png',
+        'tags': ['Requirement gathering', 'Change management', 'Data analysis', 'Communication', 'BRD,FRD,PRD and SRS documentation'],
+        'demo': 'http://192.168.96.19:3030/login',
+        'code': 'https://github.com/srpanalytics'
+    },
+    {
+        'id': 'pr5',
+        'name': 'Netflix User Analytics',
+        'short': 'User behavior analysis and visualization for Netflix dataset.',
+        'details': 'Performed EDA and created dashboards to understand content preferences, watch time, and genre popularity using Python and Power BI. Provided actionable insights on user engagement and content optimization.',
+        'img': 'images/project_netflix.png',
+        'tags': ['EDA', 'Python', 'Power BI', 'Data Analysis', 'Visualization'],
+        'demo': 'https://your-netflix-dashboard-demo.com',
+        'code': 'https://github.com/yourusername/netflix-user-analysis'
+    },
+    {
+        'id': 'pr6',
+        'name': 'SCM & Green Logistics Dashboard',
+        'short': 'Dashboard to analyze supply chain practices and sustainability KPIs.',
+        'details': 'Created an interactive dashboard to track KPIs like lead time, green practices, and performance indicators in supply chain data. Visualized company-wise and regional comparisons using filters in Power BI.',
+        'img': 'images/project_scm.png',
+        'tags': ['Supply Chain', 'Power BI', 'Green Logistics', 'Data Viz'],
+        'demo': 'https://your-scm-dashboard-demo.com',
+        'code': 'https://github.com/yourusername/scm-green-logistics'
+    },
+    {
+        'id': 'pr7',
+        'name': 'Bank Transaction EDA',
+        'short': 'Exploratory analysis of banking transaction data using Python.',
+        'details': 'Used Pandas, NumPy, and Matplotlib to analyze transaction patterns, customer behavior, and fraud indicators. Provided descriptive and inferential insights to support financial decision-making.',
+        'img': 'images/project_bankeda.png',
+        'tags': ['Python', 'EDA', 'Finance', 'Data Cleaning', 'Matplotlib'],
+        'demo': 'https://your-banking-eda-demo.com',
+        'code': 'https://github.com/yourusername/bank-transaction-eda'
+    },
+    {
+        'id': 'pr8',
+        'name': 'Kaizen Suggestion Tracker',
+        'short': 'Tool to track continuous improvement ideas in factory units.',
+        'details': 'Developed a Kaizen tracker dashboard to analyze suggestion categories, implementation rate, and plant-wise performance. Automated data refresh using Excel + Power BI integration for plant leadership reviews.',
+        'img': 'images/project_kaizen.png',
+        'tags': ['Kaizen', 'Excel', 'Power BI', 'Lean', 'Improvement'],
+        'demo': 'https://your-kaizen-tracker.com',
+        'code': 'https://github.com/yourusername/kaizen-tracker'
+    },
+    {
+        'id': 'pr9',
+        'name': 'Vendor Onboarding Tracker',
+        'short': 'Dashboard to streamline and monitor vendor onboarding process.',
+        'details': 'Automated and visualized vendor onboarding steps using a dashboard integrated with Zoho CRM. Enabled weekly status reviews with metrics on onboarding speed, documentation, and compliance gaps.',
+        'img': 'images/project_vendor.png',
+        'tags': ['CRM', 'Zoho', 'Automation', 'Vendor Management'],
+        'demo': 'https://your-vendor-dashboard-demo.com',
+        'code': 'https://github.com/yourusername/vendor-onboarding'
+    },
+    {
+        'id': 'pr10',
+        'name': 'Marketing Analytics Report',
+        'short': 'Social media engagement and campaign analytics.',
+        'details': 'Collected and analyzed performance data of campaigns run for tribal artisans via SWA Odisha. Used engagement metrics and growth trends to optimize social content and build targeted outreach.',
+        'img': 'images/project_marketing.png',
+        'tags': ['Social Media', 'Marketing', 'Analytics', 'Campaigns'],
+        'demo': 'https://your-marketing-analytics.com',
+        'code': 'https://github.com/yourusername/social-marketing-report'
+    },
+    {
+        'id': 'pr11',
+        'name': 'Production KPI Dashboard',
+        'short': 'Live dashboard for production performance tracking.',
+        'details': 'Created live dashboards in Excel and Power BI for KPIs like output vs plan, delay causes, and equipment effectiveness. Used plant data to analyze furnace availability, TAT, and spillage trends.',
+        'img': 'images/project_kpi.png',
+        'tags': ['Production', 'OEE', 'Excel', 'Power BI', 'KPI'],
+        'demo': 'https://your-production-kpi.com',
+        'code': 'https://github.com/yourusername/production-kpi-dashboard'
+    },
+    {
+        'id': 'pr12',
+        'name': 'Regression Forecasting Model',
+        'short': 'Forecasted production trends using regression models.',
+        'details': 'Used past plant performance data to build regression models for output forecasting. Applied sklearn’s Linear and Ridge regression techniques and visualized results in Jupyter Notebook.',
+        'img': 'images/project_regression.png',
+        'tags': ['Regression', 'Sklearn', 'Python', 'Forecasting'],
+        'demo': 'https://your-forecasting-model.com',
+        'code': 'https://github.com/yourusername/regression-forecasting'
     }
 ]
+
 
 skills = [
     {'category': 'Data & Analysis', 'skills': ['Pandas', 'NumPy', 'OpenPyXL', 'Matplotlib', 'Seaborn', 'Plotly', 'Scikit-learn', 'Sweetviz']},
