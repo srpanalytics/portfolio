@@ -46,84 +46,87 @@ projects = [
     },
     {
         'id': 'pr5',
-        'name': 'Netflix User Analytics',
-        'short': 'User behavior analysis and visualization for Netflix dataset.',
-        'details': 'Performed EDA and created dashboards to understand content preferences, watch time, and genre popularity using Python and Power BI. Provided actionable insights on user engagement and content optimization.',
-        'img': 'images/project_netflix.png',
-        'tags': ['EDA', 'Python', 'Power BI', 'Data Analysis', 'Visualization'],
-        'demo': 'https://your-netflix-dashboard-demo.com',
-        'code': 'https://github.com/yourusername/netflix-user-analysis'
+        'name': 'NutriGoAI',
+        'short': 'AI-powered nutrition analysis for Indian foods.',
+        'details': 'Built an AI-powered nutrition recommendation system trained on 500+ Indian foods from IFCT 2017 dataset. Implemented data preprocessing, exploratory data analysis, and machine learning models to provide nutritional insights and healthier food alternatives. Designed an interactive web app for real-time food analysis and visualization. ',
+        'img': 'images/project_nutrigoai.png',
+        'tags': ["Machine Learning", "Python", "EDA", "Nutrition Analysis", "Flask"],
+        'demo': 'https://nutrigoai.onrender.com',
+        'code': 'https://github.com/srpanalytics'
     },
     {
-        'id': 'pr6',
-        'name': 'SCM & Green Logistics Dashboard',
-        'short': 'Dashboard to analyze supply chain practices and sustainability KPIs.',
-        'details': 'Created an interactive dashboard to track KPIs like lead time, green practices, and performance indicators in supply chain data. Visualized company-wise and regional comparisons using filters in Power BI.',
-        'img': 'images/project_scm.png',
-        'tags': ['Supply Chain', 'Power BI', 'Green Logistics', 'Data Viz'],
-        'demo': 'https://your-scm-dashboard-demo.com',
-        'code': 'https://github.com/yourusername/scm-green-logistics'
+        
+        "id": "pr6",
+        "name": "Bhoomitales",
+        "short": "Platform to explore hidden places, flavors, and cultures of India.",
+        "details": "Built a storytelling and discovery platform showcasing India’s hidden destinations, local cuisines, and cultural experiences. Integrated background video animations, dynamic UI, and responsive design to create an immersive browsing experience for users.",
+        "img": "images/project_bhoomitales.png",
+        "tags": ["Travel", "Culture", "Web Development", "Frontend"],
+        "demo": "https://bhoomitalesapp.onrender.com/",
+        "code": "https://github.com/srpanalytics/bhoomitales"
+        
+
     },
-    {
-        'id': 'pr7',
-        'name': 'Bank Transaction EDA',
-        'short': 'Exploratory analysis of banking transaction data using Python.',
-        'details': 'Used Pandas, NumPy, and Matplotlib to analyze transaction patterns, customer behavior, and fraud indicators. Provided descriptive and inferential insights to support financial decision-making.',
-        'img': 'images/project_bankeda.png',
-        'tags': ['Python', 'EDA', 'Finance', 'Data Cleaning', 'Matplotlib'],
-        'demo': 'https://your-banking-eda-demo.com',
-        'code': 'https://github.com/yourusername/bank-transaction-eda'
-    },
-    {
-        'id': 'pr8',
-        'name': 'Kaizen Suggestion Tracker',
-        'short': 'Tool to track continuous improvement ideas in factory units.',
-        'details': 'Developed a Kaizen tracker dashboard to analyze suggestion categories, implementation rate, and plant-wise performance. Automated data refresh using Excel + Power BI integration for plant leadership reviews.',
-        'img': 'images/project_kaizen.png',
-        'tags': ['Kaizen', 'Excel', 'Power BI', 'Lean', 'Improvement'],
-        'demo': 'https://your-kaizen-tracker.com',
-        'code': 'https://github.com/yourusername/kaizen-tracker'
-    },
-    {
-        'id': 'pr9',
-        'name': 'Vendor Onboarding Tracker',
-        'short': 'Dashboard to streamline and monitor vendor onboarding process.',
-        'details': 'Automated and visualized vendor onboarding steps using a dashboard integrated with Zoho CRM. Enabled weekly status reviews with metrics on onboarding speed, documentation, and compliance gaps.',
-        'img': 'images/project_vendor.png',
-        'tags': ['CRM', 'Zoho', 'Automation', 'Vendor Management'],
-        'demo': 'https://your-vendor-dashboard-demo.com',
-        'code': 'https://github.com/yourusername/vendor-onboarding'
-    },
-    {
-        'id': 'pr10',
-        'name': 'Marketing Analytics Report',
-        'short': 'Social media engagement and campaign analytics.',
-        'details': 'Collected and analyzed performance data of campaigns run for tribal artisans via SWA Odisha. Used engagement metrics and growth trends to optimize social content and build targeted outreach.',
-        'img': 'images/project_marketing.png',
-        'tags': ['Social Media', 'Marketing', 'Analytics', 'Campaigns'],
-        'demo': 'https://your-marketing-analytics.com',
-        'code': 'https://github.com/yourusername/social-marketing-report'
-    },
-    {
-        'id': 'pr11',
-        'name': 'Production KPI Dashboard',
-        'short': 'Live dashboard for production performance tracking.',
-        'details': 'Created live dashboards in Excel and Power BI for KPIs like output vs plan, delay causes, and equipment effectiveness. Used plant data to analyze furnace availability, TAT, and spillage trends.',
-        'img': 'images/project_kpi.png',
-        'tags': ['Production', 'OEE', 'Excel', 'Power BI', 'KPI'],
-        'demo': 'https://your-production-kpi.com',
-        'code': 'https://github.com/yourusername/production-kpi-dashboard'
-    },
-    {
-        'id': 'pr12',
-        'name': 'Regression Forecasting Model',
-        'short': 'Forecasted production trends using regression models.',
-        'details': 'Used past plant performance data to build regression models for output forecasting. Applied sklearn’s Linear and Ridge regression techniques and visualized results in Jupyter Notebook.',
-        'img': 'images/project_regression.png',
-        'tags': ['Regression', 'Sklearn', 'Python', 'Forecasting'],
-        'demo': 'https://your-forecasting-model.com',
-        'code': 'https://github.com/yourusername/regression-forecasting'
-    }
+    # {
+    #     'id': 'pr7',
+    #     'name': 'Bank Transaction EDA',
+    #     'short': 'Exploratory analysis of banking transaction data using Python.',
+    #     'details': 'Used Pandas, NumPy, and Matplotlib to analyze transaction patterns, customer behavior, and fraud indicators. Provided descriptive and inferential insights to support financial decision-making.',
+    #     'img': 'images/project_bankeda.png',
+    #     'tags': ['Python', 'EDA', 'Finance', 'Data Cleaning', 'Matplotlib'],
+    #     'demo': 'https://your-banking-eda-demo.com',
+    #     'code': 'https://github.com/yourusername/bank-transaction-eda'
+    # },
+    # {
+    #     'id': 'pr8',
+    #     'name': 'Kaizen Suggestion Tracker',
+    #     'short': 'Tool to track continuous improvement ideas in factory units.',
+    #     'details': 'Developed a Kaizen tracker dashboard to analyze suggestion categories, implementation rate, and plant-wise performance. Automated data refresh using Excel + Power BI integration for plant leadership reviews.',
+    #     'img': 'images/project_kaizen.png',
+    #     'tags': ['Kaizen', 'Excel', 'Power BI', 'Lean', 'Improvement'],
+    #     'demo': 'https://your-kaizen-tracker.com',
+    #     'code': 'https://github.com/yourusername/kaizen-tracker'
+    # },
+    # {
+    #     'id': 'pr9',
+    #     'name': 'Vendor Onboarding Tracker',
+    #     'short': 'Dashboard to streamline and monitor vendor onboarding process.',
+    #     'details': 'Automated and visualized vendor onboarding steps using a dashboard integrated with Zoho CRM. Enabled weekly status reviews with metrics on onboarding speed, documentation, and compliance gaps.',
+    #     'img': 'images/project_vendor.png',
+    #     'tags': ['CRM', 'Zoho', 'Automation', 'Vendor Management'],
+    #     'demo': 'https://your-vendor-dashboard-demo.com',
+    #     'code': 'https://github.com/yourusername/vendor-onboarding'
+    # },
+    # {
+    #     'id': 'pr10',
+    #     'name': 'Marketing Analytics Report',
+    #     'short': 'Social media engagement and campaign analytics.',
+    #     'details': 'Collected and analyzed performance data of campaigns run for tribal artisans via SWA Odisha. Used engagement metrics and growth trends to optimize social content and build targeted outreach.',
+    #     'img': 'images/project_marketing.png',
+    #     'tags': ['Social Media', 'Marketing', 'Analytics', 'Campaigns'],
+    #     'demo': 'https://your-marketing-analytics.com',
+    #     'code': 'https://github.com/yourusername/social-marketing-report'
+    # },
+    # {
+    #     'id': 'pr11',
+    #     'name': 'Production KPI Dashboard',
+    #     'short': 'Live dashboard for production performance tracking.',
+    #     'details': 'Created live dashboards in Excel and Power BI for KPIs like output vs plan, delay causes, and equipment effectiveness. Used plant data to analyze furnace availability, TAT, and spillage trends.',
+    #     'img': 'images/project_kpi.png',
+    #     'tags': ['Production', 'OEE', 'Excel', 'Power BI', 'KPI'],
+    #     'demo': 'https://your-production-kpi.com',
+    #     'code': 'https://github.com/yourusername/production-kpi-dashboard'
+    # },
+    # {
+    #     'id': 'pr12',
+    #     'name': 'Regression Forecasting Model',
+    #     'short': 'Forecasted production trends using regression models.',
+    #     'details': 'Used past plant performance data to build regression models for output forecasting. Applied sklearn’s Linear and Ridge regression techniques and visualized results in Jupyter Notebook.',
+    #     'img': 'images/project_regression.png',
+    #     'tags': ['Regression', 'Sklearn', 'Python', 'Forecasting'],
+    #     'demo': 'https://your-forecasting-model.com',
+    #     'code': 'https://github.com/yourusername/regression-forecasting'
+    # }
 ]
 
 
